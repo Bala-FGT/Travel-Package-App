@@ -24,6 +24,8 @@ classification:
 workflowType: 'prd'
 ---
 
+# Product Requirements Document - Travel Package App
+
 ## Executive Summary
 
 ### Vision Alignment
@@ -284,7 +286,7 @@ Users can explore destinations at their own pace, without pressure, view package
 | Form validation | Client + server side | Prevent invalid submissions |
 | HTTPS | Required | Secure connections |
 
-# Product Requirements Document - Travel Package App
+## Appendix
 
-**Author:** Balakrishnan.d
+**Author:** Balakrishnan.d  
 **Date:** 2026-02-18
