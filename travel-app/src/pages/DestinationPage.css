@@ -1,0 +1,158 @@
+/* DestinationPage Styles */
+.destination-page {
+  min-height: 100vh;
+  background-color: #f8f9fa;
+}
+
+.back-link {
+  display: inline-block;
+  padding: 15px 20px;
+  color: #3498db;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
+
+.destination-header {
+  background: white;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding: 0 20px 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header-image {
+  width: 400px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.header-text h1 {
+  color: #2c3e50;
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.header-text p {
+  color: #666;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.packages-section {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.packages-section h2 {
+  color: #2c3e50;
+  margin-bottom: 30px;
+  font-size: 2rem;
+}
+
+.packages-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+}
+
+.package-card {
+  background: white;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.package-card h3 {
+  color: #2c3e50;
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+.duration {
+  display: inline-block;
+  background: #ecf0f1;
+  color: #2c3e50;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  margin-bottom: 15px;
+}
+
+.highlights {
+  list-style: none;
+  padding: 0;
+  margin: 15px 0;
+}
+
+.highlights li {
+  color: #555;
+  padding: 5px 0;
+  font-size: 0.95rem;
+}
+
+.package-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #eee;
+}
+
+.price {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #27ae60;
+}
+
+.view-btn {
+  background: #3498db;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+
+.view-btn:hover {
+  background: #2980b9;
+}
+
+.not-found {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.not-found h2 {
+  color: #e74c3c;
+  margin-bottom: 20px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .header-content {
+    flex-direction: column;
+    padding: 0 20px 30px;
+  }
+  
+  .header-image {
+    width: 100%;
+    height: 200px;
+  }
+  
+  .header-text h1 {
+    font-size: 1.8rem;
+  }
+}

@@ -1,0 +1,173 @@
+/* PackageDetailsPage Styles */
+.package-details-page {
+  min-height: 100vh;
+  background-color: #f8f9fa;
+}
+
+.package-header {
+  background: white;
+  padding: 10px 0;
+}
+
+.back-link {
+  display: inline-block;
+  padding: 15px 20px;
+  color: #3498db;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
+
+.package-content {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  gap: 40px;
+}
+
+.package-main {
+  flex: 1;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.package-main h1 {
+  color: #2c3e50;
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.package-duration {
+  display: inline-block;
+  background: #ecf0f1;
+  color: #2c3e50;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 0.95rem;
+  margin-bottom: 25px;
+}
+
+.package-section {
+  margin-bottom: 30px;
+}
+
+.package-section h2 {
+  color: #2c3e50;
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+}
+
+.package-section p {
+  color: #666;
+  line-height: 1.7;
+  font-size: 1rem;
+}
+
+.highlights-list {
+  list-style: none;
+  padding: 0;
+}
+
+.highlights-list li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 0;
+  color: #555;
+  font-size: 1rem;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.highlight-icon {
+  color: #27ae60;
+  font-weight: bold;
+}
+
+.package-sidebar {
+  width: 350px;
+  flex-shrink: 0;
+}
+
+.booking-card {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  position: sticky;
+  top: 20px;
+}
+
+.price-tag {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.price-label {
+  display: block;
+  color: #666;
+  font-size: 0.9rem;
+  margin-bottom: 5px;
+}
+
+.price-value {
+  display: block;
+  color: #27ae60;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.price-note {
+  color: #999;
+  font-size: 0.85rem;
+}
+
+.interest-btn {
+  width: 100%;
+  padding: 15px;
+  background: #3498db;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.interest-btn:hover {
+  background: #2980b9;
+}
+
+.booking-note {
+  text-align: center;
+  color: #666;
+  font-size: 0.9rem;
+  margin-top: 20px;
+  line-height: 1.8;
+}
+
+.not-found {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .package-content {
+    flex-direction: column;
+  }
+  
+  .package-sidebar {
+    width: 100%;
+  }
+  
+  .booking-card {
+    position: static;
+  }
+}
