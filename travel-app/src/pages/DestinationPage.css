@@ -1,7 +1,7 @@
 /* DestinationPage Styles */
 .destination-page {
   min-height: 100vh;
-  background-color: #f8f9fa;
+  background-color: var(--bg-primary);
 }
 
 .back-link {
@@ -17,7 +17,7 @@
 }
 
 .destination-header {
-  background: white;
+  background: var(--bg-secondary);
 }
 
 .header-content {
@@ -37,13 +37,13 @@
 }
 
 .header-text h1 {
-  color: #2c3e50;
+  color: var(--text-primary);
   font-size: 2.5rem;
   margin-bottom: 15px;
 }
 
 .header-text p {
-  color: #666;
+  color: var(--text-secondary);
   font-size: 1.1rem;
   line-height: 1.6;
 }
@@ -55,7 +55,7 @@
 }
 
 .packages-section h2 {
-  color: #2c3e50;
+  color: var(--text-primary);
   margin-bottom: 30px;
   font-size: 2rem;
 }
@@ -67,14 +67,14 @@
 }
 
 .package-card {
-  background: white;
+  background: var(--bg-secondary);
   border-radius: 12px;
   padding: 25px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 15px var(--card-shadow);
 }
 
 .package-card h3 {
-  color: #2c3e50;
+  color: var(--text-primary);
   font-size: 1.4rem;
   margin-bottom: 10px;
 }
@@ -82,7 +82,7 @@
 .duration {
   display: inline-block;
   background: #ecf0f1;
-  color: #2c3e50;
+  color: var(--text-primary);
   padding: 5px 12px;
   border-radius: 20px;
   font-size: 0.85rem;
@@ -96,7 +96,7 @@
 }
 
 .highlights li {
-  color: #555;
+  color: var(--text-secondary);
   padding: 5px 0;
   font-size: 0.95rem;
 }
@@ -107,7 +107,7 @@
   align-items: center;
   margin-top: 20px;
   padding-top: 20px;
-  border-top: 1px solid #eee;
+  border-top: 1px solid var(--card-shadow);
 }
 
 .price {

@@ -1,11 +1,11 @@
 /* PackageDetailsPage Styles */
 .package-details-page {
   min-height: 100vh;
-  background-color: #f8f9fa;
+  background-color: var(--bg-primary);
 }
 
 .package-header {
-  background: white;
+  background: var(--bg-secondary);
   padding: 10px 0;
 }
 
@@ -31,14 +31,14 @@
 
 .package-main {
   flex: 1;
-  background: white;
+  background: var(--bg-secondary);
   padding: 30px;
   border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 15px var(--card-shadow);
 }
 
 .package-main h1 {
-  color: #2c3e50;
+  color: var(--text-primary);
   font-size: 2rem;
   margin-bottom: 15px;
 }
@@ -46,7 +46,7 @@
 .package-duration {
   display: inline-block;
   background: #ecf0f1;
-  color: #2c3e50;
+  color: var(--text-primary);
   padding: 8px 16px;
   border-radius: 20px;
   font-size: 0.95rem;
@@ -58,13 +58,13 @@
 }
 
 .package-section h2 {
-  color: #2c3e50;
+  color: var(--text-primary);
   font-size: 1.4rem;
   margin-bottom: 15px;
 }
 
 .package-section p {
-  color: #666;
+  color: var(--text-secondary);
   line-height: 1.7;
   font-size: 1rem;
 }
@@ -79,9 +79,9 @@
   align-items: center;
   gap: 10px;
   padding: 10px 0;
-  color: #555;
+  color: var(--text-secondary);
   font-size: 1rem;
-  border-bottom: 1px solid #f0f0f0;
+  border-bottom: 1px solid var(--card-shadow);
 }
 
 .highlight-icon {
@@ -95,10 +95,10 @@
 }
 
 .booking-card {
-  background: white;
+  background: var(--bg-secondary);
   padding: 30px;
   border-radius: 12px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 4px 20px var(--card-shadow);
   position: sticky;
   top: 20px;
 }

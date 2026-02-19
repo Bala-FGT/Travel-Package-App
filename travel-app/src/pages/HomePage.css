@@ -1,12 +1,12 @@
 /* HomePage Styles */
 .home-page {
   min-height: 100vh;
-  background-color: #f8f9fa;
+  background-color: var(--bg-primary);
 }
 
 .hero {
   background: linear-gradient(180deg, rgba(44, 62, 80, 0.7) 0%, rgba(44, 62, 80, 0.9) 100%),
-              url('/Ooty.jpeg');
+              url('/Background.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -52,30 +52,32 @@
 
 .destinations-section h2 {
   text-align: center;
-  color: #2c3e50;
+  color: var(--text-primary);
   margin-bottom: 30px;
   font-size: 2rem;
 }
 
 .destinations-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   gap: 25px;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 .destination-card {
-  background: white;
+  background: var(--bg-secondary);
   border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 15px var(--card-shadow);
   text-decoration: none;
-  color: inherit;
+  color: var(--text-primary);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .destination-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 8px 25px var(--card-shadow);
 }
 
 .destination-image {
@@ -99,13 +101,13 @@
 }
 
 .destination-info h3 {
-  color: #2c3e50;
+  color: var(--text-primary);
   margin-bottom: 10px;
   font-size: 1.5rem;
 }
 
 .destination-info p {
-  color: #666;
+  color: var(--text-secondary);
   margin-bottom: 15px;
   line-height: 1.5;
 }
@@ -120,11 +122,12 @@
 }
 
 .home-footer {
-  background: #2c3e50;
-  color: white;
+  background: var(--bg-secondary);
+  color: var(--text-primary);
   text-align: center;
   padding: 20px;
   margin-top: 40px;
+  border-top: 1px solid var(--card-shadow);
 }
 
 .home-footer p {
@@ -145,6 +148,10 @@
   
   .hero-content p {
     font-size: 1.1rem;
+  }
+  
+  .destinations-grid {
+    grid-template-columns: 1fr;
   }
   
   .destinations-section h2 {
