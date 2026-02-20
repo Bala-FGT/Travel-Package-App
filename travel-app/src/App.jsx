@@ -9,19 +9,21 @@ import AdminDashboard from './pages/AdminDashboard';
 import PackageForm from './pages/PackageForm';
 import './App.css';
 
+const base = import.meta.env.BASE_URL || '/';
+
 function App() {
   return (
     <ThemeProvider>
       <ThemeToggle />
       <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/destination/:id" element={<DestinationPage />} />
-        <Route path="/package/:destinationId/:packageId" element={<PackageDetailsPage />} />
+        <Route path={base} element={<HomePage />} />
+        <Route path={`${base}destination/:id`} element={<DestinationPage />} />
+        <Route path={`${base}package/:destinationId/:packageId`} element={<PackageDetailsPage />} />
         {/* Admin Routes */}
-        <Route path="/admin" element={<AdminLogin />} />
-        <Route path="/admin/dashboard" element={<AdminDashboard />} />
-        <Route path="/admin/destination/:destinationId/add" element={<PackageForm />} />
-        <Route path="/admin/destination/:destinationId/edit/:packageId" element={<PackageForm />} />
+        <Route path={`${base}admin`} element={<AdminLogin />} />
+        <Route path={`${base}admin/dashboard`} element={<AdminDashboard />} />
+        <Route path={`${base}admin/destination/:destinationId/add`} element={<PackageForm />} />
+        <Route path={`${base}admin/destination/:destinationId/edit/:packageId`} element={<PackageForm />} />
       </Routes>
     </ThemeProvider>
   );
