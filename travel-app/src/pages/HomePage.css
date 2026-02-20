@@ -135,6 +135,22 @@
   font-size: 1rem;
 }
 
+.home-footer .admin-link {
+  display: inline-block;
+  margin-top: 12px;
+  color: #888;
+  font-size: 0.85rem;
+  text-decoration: none;
+  padding: 6px 14px;
+  border: 1px solid #888;
+  border-radius: 4px;
+}
+
+.home-footer .admin-link:hover {
+  color: var(--text-primary);
+  border-color: var(--text-primary);
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   .hero {

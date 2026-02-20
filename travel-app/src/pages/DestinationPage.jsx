@@ -1,5 +1,5 @@
 import { useParams, Link } from 'react-router-dom';
-import { getDestination } from '../data/destinations';
+import { getDestination } from '../data/packageService';
 import './DestinationPage.css';
 
 function DestinationPage() {

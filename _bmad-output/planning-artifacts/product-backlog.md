@@ -33,6 +33,7 @@
 
 | Priority | Feature | Description |
 |----------|---------|-------------|
+| P2 | Admin Package Management | Admin can add, edit packages for each destination |
 | P2 | Admin Lead Dashboard | View all submitted leads |
 | P2 | WhatsApp API Integration | Send automated WhatsApp messages |
 | P2 | Reviews & Testimonials | Display customer reviews |

@@ -145,3 +145,61 @@
 - Touch targets are minimum 44x44px
 - Forms are usable on mobile keyboards
 - Images and text are readable without zooming
+
+---
+
+## Epic 7: Admin Package Management
+
+### US 7.1: Admin Authentication
+**As an** admin  
+**I want to** access an admin login page  
+**So that** I can manage packages securely  
+
+**Acceptance Criteria:**
+- Admin login page at /admin route
+- Simple username/password authentication
+- Session persists for authenticated admin
+- Logout option available
+
+### US 7.2: Admin Dashboard
+**As an** admin  
+**I want to** see a dashboard with all destinations  
+**So that** I can select which destination's packages to manage  
+
+**Acceptance Criteria:**
+- Dashboard lists all 4 destinations (Ooty, Munnar, Kodaikanal, Coorg)
+- Each destination shows package count
+- Click destination to view/manage its packages
+
+### US 7.3: Add New Package
+**As an** admin  
+**I want to** add a new package to a destination  
+**So that** I can offer new travel options  
+
+**Acceptance Criteria:**
+- Form with fields: Title (required), Duration (required), Highlights (comma-separated), Price (required)
+- Packages use destination's existing image
+- New package appears in public listing immediately
+- Success confirmation shown after save
+
+### US 7.4: Edit Package
+**As an** admin  
+**I want to** edit existing package details  
+**So that** I can update pricing, duration, or highlights  
+
+**Acceptance Criteria:**
+- Edit button on each package in admin view
+- Pre-filled form with current values
+- Save updates package immediately
+- Success confirmation shown
+
+### US 7.5: Delete Package
+**As an** admin  
+**I want to** delete a package  
+**So that** I can remove outdated offerings  
+
+**Acceptance Criteria:**
+- Delete button on each package
+- Confirmation dialog before deletion
+- Package removed from public listing after delete
+- Success confirmation shown

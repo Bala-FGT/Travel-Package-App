@@ -1,8 +1,11 @@
 import { Link } from 'react-router-dom';
-import { destinations } from '../data/destinations';
+import { getAllDestinations } from '../data/packageService';
 import './HomePage.css';
 
 function HomePage() {
+  const destinations = getAllDestinations();
+  const basePath = import.meta.env.BASE_URL || '/';
+  
   return (
     <div className="home-page">
       <header className="hero">
@@ -38,6 +41,7 @@ function HomePage() {
       
       <footer className="home-footer">
         <p>📞 Call us: +91 70126 31439 | 💬 WhatsApp: +91 70126 31439</p>
+        <a href={`${basePath}admin`} className="admin-link">Admin Login</a>
       </footer>
     </div>
   );

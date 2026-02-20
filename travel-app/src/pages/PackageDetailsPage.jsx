@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { getDestination, getPackage } from '../data/destinations';
+import { getDestination, getPackage } from '../data/packageService';
 import LeadForm from '../components/LeadForm';
 import './PackageDetailsPage.css';
 
