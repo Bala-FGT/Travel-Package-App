@@ -1,11 +1,11 @@
 // Destination data for the Travel Package App
-
+const BASE = import.meta.env.BASE_URL;
 export const destinations = [
   {
     id: 'ooty',
     name: 'Ooty',
     description: 'The Queen of Hill Stations, known for its tea gardens, colonial charm, and pleasant climate.',
-    image: '/Ooty.jpeg',
+    image: `${BASE}Ooty.jpeg`,
     packages: [
       {
         id: 'ooty-1',
@@ -27,7 +27,7 @@ export const destinations = [
     id: 'munnar',
     name: 'Munnar',
     description: 'A picturesque hill station famous for its tea plantations, misty mountains, and exotic flora.',
-    image: '/Munnar.jpg',
+    image: `${BASE}Munnar.jpg`,
     packages: [
       {
         id: 'munnar-1',
@@ -49,7 +49,7 @@ export const destinations = [
     id: 'kodaikanal',
     name: 'Kodaikanal',
     description: 'The Princess of Hill Stations, offering serene lakes, waterfalls, and dense forests.',
-    image: '/Kodaikanal.jpg',
+    image: `${BASE}Kodaikanal.jpg`,
     packages: [
       {
         id: 'kodaikanal-1',
@@ -71,7 +71,7 @@ export const destinations = [
     id: 'coorg',
     name: 'Coorg',
     description: 'The Scotland of India, known for its coffee plantations, spice estates, and lush greenery.',
-    image: '/Coorg.jpg',
+    image: `${BASE}Coorg.jpg`,
     packages: [
       {
         id: 'coorg-1',
